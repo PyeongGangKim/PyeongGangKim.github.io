@@ -1,6 +1,6 @@
 # Site settings
-title:          Rain
-description:    "Rain is a simple and clean Jekyll theme with focus on content."
+title:          peace in cs 
+description:    "peace in computer science"
 url:            https://pyeonggangkim.github.io
 
 # Author
@@ -35,6 +35,6 @@ related_posts_section:
 # Links to social media
 social:
   email: inelaah@gmail.com
-  github: https://github.com/inelaah
+  github: https://github.com/peonggangkim
   twitter: https://twitter.com
   linkedin: https://ba.linkedin.com/in/inela-avdic-hukic-322354131
