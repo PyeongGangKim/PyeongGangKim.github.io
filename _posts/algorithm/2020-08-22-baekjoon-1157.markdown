@@ -1,0 +1,78 @@
+---
+layout: post
+title: (c++)백준 1157
+date: 2020-08-25 14:54:23 +0900
+category: BOJ
+tag: ['백준', '1157', 'c++']
+---
+
+백준 1157 단어 공부
+=====
+
+### Problem 
+     
+알파벳 대소문자로 된 단어가 주어지면, 이 단어에서 가장 많이 사용된 알파벳이 무엇인지 알아내는 프로그램을 작성하시오. 단, 대문자와 소문자를 구분하지 않는다.
+     
+### Input
+           
+첫째 줄에 단어. 단어 length <= 1,000,000
+     
+### Output
+      
+가장 많이 사용된 문자를 대문자로 출력 동률이 발생하는 경우는 **?**로 출력.
+    
+### Algorithm
+     
+단순하게 input을 배열로 받고 소문자와 대문자를 동일하게 인식하기 위해 아스키 코드에 맞는 각 크기의 값을 빼준다.
+대문자는 65~90. 소문자는 97~122.
+각각 26개 이다.
+if 90 < 들어온 숫자. ==> 소문자일 경우
+    들어온 숫자 - 97해서 저장.
+else ==> 대문자일 경우.
+    들어온 숫자 - 65해서 저장.
+그래서 마지막에는 값을 앞에서부터 큰 값이 나왔을 때, 그 숫자의 값과 몇번째 수인지 저장한다. 그리고 동률값을 체크하는 변수를 만들어 0으로 초기화 한 후, 동률 값이 나오면 동률값 변수를 1로 변경한다.
+      
+### code
+      
+```ruby
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+    string input;
+    int num = 0;
+    cin >> input;
+    int result[26];
+    int same = 0;
+    int alph = 0;
+    fill_n(result,26,0);
+    int len = input.length();
+    for(int i = 0 ; i < len; i++){
+        if(input[i] > 90){
+            num = input[i] - 97;
+            result[num]++;
+        }
+        else{
+            num = input[i] - 65;
+            result[num]++;
+        }
+    }
+    num = 0;
+    for(int i = 0 ; i < 26; i++){
+        if(num < result[i]){
+            num = result[i];
+            same = 0;
+            alph = i;
+        }
+        else if(num == result[i]){
+            same = 1;
+        }
+        else continue;
+    }
+    if(same == 1) printf("?\n");
+    else{
+        printf("%c\n",alph+65);
+    }
+}
+```
