@@ -28,10 +28,10 @@ http://kt.agh.edu.pl/~matiolanski/KnivesImagesDatabase/KnivesImagesDatabase.rar
 ***fine tuning***이란 기존에 학습되어져 있는 모델을 기반으로 아키텍쳐를 나의 이미지 데이터에 맞게 변형하고 이미 학습된 모델 weights로 부터 학습을 업데이트 하는 방법. 즉, 새로운 데이터를 추가해 파라미터를 미세하게 조정하는 행위이다.      
 ***Transfer Learning***이란 기존의 만들어진 모델을 사용하여 새로운 모델을 만들시에 학습을 빠르게 하고, 예측을 더 높이는 방법이다. 이미 잘 훈련되 모델이 있고, 해당 모델과 유사한 문제를 해결할 때 transger learning을 사용한다.    
 Transfer learning을 할 때 생기는 경우의 수.    
-- 새로 훈련할 데이터가 적지만 orginal 데이터와 유사한 경우. linear classfier 레이어만 학습을 한다.     
-- 새로훈련할 데이터가 매우 많으면 original 데이터와 유사할 경우 데이터 양이 많으면 overfitting의 위험이 낮으므로, 전체 레이어에 대해 fine-tune을 진행한다.     
-- 새로 훈련할 데이터가 적으며 original 데이터와 다른 경우 데이터가 서로 다르기 때문에 network의 마지막 부분만 학습시키는 것은 위험하다. 그렇기 때문에 network 초기 부분 어딘가 activation 이후에 특정 레이어를 학습키는 게 좋다.
-- 새로 훈련할 데이터가 많지만 original 데이터와 다른 경우
+1. 새로 훈련할 데이터가 적지만 orginal 데이터와 유사한 경우. linear classfier 레이어만 학습을 한다.     
+2. 새로훈련할 데이터가 매우 많으면 original 데이터와 유사할 경우 데이터 양이 많으면 overfitting의 위험이 낮으므로, 전체 레이어에 대해 fine-tune을 진행한다.     
+3. 새로 훈련할 데이터가 적으며 original 데이터와 다른 경우 데이터가 서로 다르기 때문에 network의 마지막 부분만 학습시키는 것은 위험하다. 그렇기 때문에 network 초기 부분 어딘가 activation 이후에 특정 레이어를 학습키는 게 좋다.
+4. 새로 훈련할 데이터가 많지만 original 데이터와 다른 경우
 데이터가 많기 때문에 아예 새로운 ConvNet을 만들수도 있지만, 실질적으로 transfer learning이 더 효율적 이므로, 전체 네트워크를 fine-tune을 하는게 좋다.
 #### RPN(FPN, C4, DC5)
 #### model(representaion + classifier)         
