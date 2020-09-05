@@ -39,7 +39,7 @@ d(n) 함수를 정의한다. d(n) 함수는 처음에 input 값으로 받는 함
 boolean 배열에서 true가 아닌 값을 출력해준다.    
 
 ### code
-```ruby
+```c++
 
 #include <bits/stdc++.h>
 

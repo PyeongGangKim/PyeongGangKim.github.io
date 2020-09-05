@@ -34,7 +34,7 @@ else ==> 대문자일 경우.
       
 ### code
       
-```ruby
+```c++
 #include <bits/stdc++.h>
 
 using namespace std;
