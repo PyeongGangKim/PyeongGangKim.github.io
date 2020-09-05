@@ -34,5 +34,5 @@ Transfer learning을 할 때 생기는 경우의 수.
 - 새로 훈련할 데이터가 많지만 original 데이터와 다른 경우
 데이터가 많기 때문에 아예 새로운 ConvNet을 만들수도 있지만, 실질적으로 transfer learning이 더 효율적 이므로, 전체 네트워크를 fine-tune을 하는게 좋다.
 #### RPN(FPN, C4, DC5)
-#### model(representaion + classifier)    
+#### model(representaion + classifier)         
 내가 생각하기에 우리는 아마 bounding box찾는 layer와 classifier와 fully connected layer 모두 학습을 시켜야되지 않을까 싶다.
