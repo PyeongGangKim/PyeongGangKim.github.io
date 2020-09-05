@@ -32,7 +32,11 @@ Transfer learning을 할 때 생기는 경우의 수.
 - 새로훈련할 데이터가 매우 많으면 original 데이터와 유사할 경우 데이터 양이 많으면 overfitting의 위험이 낮으므로, 전체 레이어에 대해 fine-tune을 진행한다.     
 - 새로 훈련할 데이터가 적으며 original 데이터와 다른 경우 데이터가 서로 다르기 때문에 network의 마지막 부분만 학습시키는 것은 위험하다. 그렇기 때문에 network 초기 부분 어딘가 activation 이후에 특정 레이어를 학습키는 게 좋다.
 - 새로 훈련할 데이터가 많지만 original 데이터와 다른 경우
-데이터가 많기 때문에 아예 새로운 ConvNet을 만들수도 있지만, 실질적으로 transfer learning이 더 효율적 이므로, 전체 네트워크를 fine-tune을 하는게 좋다.      
+데이터가 많기 때문에 아예 새로운 ConvNet을 만들수도 있지만, 실질적으로 transfer learning이 더 효율적 이므로, 전체 네트워크를 fine-tune을 하는게 좋다.
+
+
 #### RPN(FPN, C4, DC5)
+
+
 #### model(representaion + classifier)         
 내가 생각하기에 우리는 아마 bounding box찾는 layer와 classifier와 fully connected layer 모두 학습을 시켜야되지 않을까 싶다.
