@@ -38,5 +38,8 @@ Transfer learning을 할 때 생기는 경우의 수.
 #### RPN(FPN, C4, DC5)
 
 
-#### model(representaion + classifier)         
+#### model(representaion + classifier)
+
+
+
 내가 생각하기에 우리는 아마 bounding box찾는 layer와 classifier와 fully connected layer 모두 학습을 시켜야되지 않을까 싶다.
