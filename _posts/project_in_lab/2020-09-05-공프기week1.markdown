@@ -1,0 +1,31 @@
+---
+layout: post
+title: 공프기 1주차
+date: 2020-09-04 16:38:23 +0900
+category: project_in_lab
+tag: ['weapon', 'object detection']
+---
+
+공프기 1주차
+===
+
+### 학습할 무기 종류
+
+***gun***
+https://github.com/SasankYadati/Guns-Dataset    
+https://public.roboflow.com/object-detection/pistols    
+https://blog.usejournal.com/worlds-first-synthetic-gun-detection-dataset-from-edgecase-ai-dbe3ea8eeb7e     
+***knife***
+https://www.kaggle.com/shank885/knife-dataset?     
+http://kt.agh.edu.pl/~matiolanski/KnivesImagesDatabase/     
+http://kt.agh.edu.pl/~matiolanski/KnivesImagesDatabase/KnivesImagesDatabase.rar    
+***sword***
+***sledgehammer***
+***axe***
+
+
+### 추가학습(fine tune)을 진행하는 컴포넌트가 무엇 무엇인지(RPN, Representation learning, classifier)     
+***fine tuning***이란 기존에 학습되어져 있는 모델을 기반으로 아키텍쳐를 나의 이미지 데이터에 맞게 변형하고 이미 학습된 모델 weights로 부터 학습을 업데이트 하는 방법. 즉, 새로운 데이터를 추가해 파라미터를 미세하게 조정하는 행위이다.          
+#### RPN(FPN, C4, DC5)
+#### model(representaion + classifier)    
+내가 생각하기에 우리는 아마 bounding box찾는 layer와 classifier와 fully connected layer 모두 학습을 시켜야되지 않을까 싶다.

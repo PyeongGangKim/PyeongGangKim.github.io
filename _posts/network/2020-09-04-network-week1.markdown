@@ -11,9 +11,9 @@ Network 1주차
 
 #### 1-1 What is the internet?
 
-인터넷의 기본적인 hardware와 software를 이루고 있는 nuts and bolts에 대한 설명을 하고, distributed application에게 서비스를 제공하는 networking infrastructure에 대해 설명할 것이다.
+인터넷의 기본적인 hardware와 software를 이루고 있는 nuts and bolts에 대한 설명을 하고, distributed application에게 서비스를 제공하는 networking infrastructure에 대해 설명할 것이다.  
 
-1. A Nuts and Bolts Descriptiop
+##### A Nuts and Bolts Descriptiop
 
 
 **end system** - 인터넷에 연결된 컴퓨터나 다른 장비들. 최종 사용자를 위한 어플리케이션을 수행하는 주체.(ex. 인터넷 pc, 스마트폰, 태플릿 pc같은 단말기.)
