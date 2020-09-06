@@ -1,0 +1,63 @@
+---
+layout: post
+title: 통계학 1주차
+date: 2020-09-07 16:38:23 +0900
+category: statistics
+tag: ['statistics']
+---
+
+통계학 1주차
+=====
+
+1주차는 거의 용어 정리가 많았다.    
+
+#### 4개의 척도.
+
+측정마다 특징이 있다
+1. nominal level
+    - 분류 척도로 범주로 나누는 범주형 데이터이다. 더하기 빼기가 불가능하다.
+2. ordinal level
+    - 순서 척도로 대소관계가 성립된다 질적표현 양적 표현이 가능하다.
+3. interval level
+    - 구간 척도로 기준 구간에서 + -로 한다. (ex. IQ, 온도 등이 있다.)
+4. ratio level
+    - 비율 척도로 나누기와 곱셉이 가능하다.
+
+
+
+#### data의 종류
+
+1. Qualitative variable
+    - 질적 데이터 ordinal data, nominal data 범주형 데이터.
+2. Qunatitative variable
+    - 양적 데이터 interval data, ratio data 
+3. Discrete variable
+    - 정수값 -1,0,1,2 유한개의 값
+4. Continuous variable
+    - 연속된 값. 무한개의 값.
+
+
+
+**population**(모집단)을 모두 조사하기에는 매우 힘들기 때문에, **sample**(표본)을 뽑아서 조사한다. sample은 보통 모집단의 대표성을 띈다. sample을 뽑을 때는 **bias(편의)**가 있으면 안된다.    
+
+bias를 제거하기 위해서는 sampling을 잘 하는 것이 중요하다
+
+##### sampling 4가지
+
+1. simple random sampling
+    - 단순 랜덤추출은 homogeneous할 때 사용된다. 
+2. Systematic sampling
+    -  각 집단에서 kth의 마다 뽑아서 조사한다.  제조업
+3. Stratified sampling
+    - 동질의 group을 만든다. 충화추출이다. 여론조사 multi-stage 보통은 2stage를 사용한다.
+4. Cluster sampling
+    - 집락추출. 비동질 그룹들 끼리는 동질이다. 비동질 그룹 하나를 골라서 조사를 한다. 사회 조사
+5. Quater sampling
+    - 할당 추출. 보통 simple random sampling이랑 같이 사용한다.
+
+#### Study
+
+1. Observational study
+    - 관측 연구. 행동 과학. 자연 스럽게 하고 조작이 불가능하다. 원인과 결과를 알 수가 없다
+2. Experimential study
+    - 실험 연구. 백신 같은 거 할때 쓰임. 모든 게 통제된 상태에서 하기 때문에 원인과 결과를 확실히 알 수 있다 들어나지 않는 원인이 있을 수 있다. 돈과 시간이 많이 든다.
