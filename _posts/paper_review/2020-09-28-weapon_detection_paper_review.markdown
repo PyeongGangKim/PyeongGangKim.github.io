@@ -32,3 +32,15 @@ positive는 IMFDb database에서 얻은 것이고, negative image는 internet에
 Deep Learningd Model은 MATLAB에 MatConvNet을 사용해서 구현을 했다. 그리고 ImageNet으로 pretrain 된 VGG-16을 model을 사용하였다.
 
 #### EXPERIMENTAL SETUP
+Matlab에 있는  MatConvNet framework로 faster R-CNN을 구현했다.     
+ImageNet으로 pre-train된 VGG-16 model을 사용하였다.   
+##### Performance Evaluation
+True Positive(TP), False Positive(FP), accuracy를 metric으로 사용.    
+TPR: 실제 positive image의 비율과 sensitivity 또는 recall에 관해 알 수 있다.
+False Positive: negative image의 percentage, specificity를 알 수 있다.      
+Accuracy: 정확하게 detect한 image의 총 숫자의 비율을 알 수 있다.     
+TPR = TP/TP + FN     
+test 할 때는 varying conditions에서 했다. background with guns, occlusion, etc.    
+interclass variation과 intra class similarity에서는 잘 작동됨.   
+그리고 classifier도 SVM,KNN,Ensemble tree에서 test 했다.      
+SVM에서 가장 높은 accuracy를 보였다.    
