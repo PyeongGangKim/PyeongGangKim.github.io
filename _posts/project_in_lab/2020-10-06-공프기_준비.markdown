@@ -1,0 +1,38 @@
+---
+layout: post
+title: 공프기 1주차
+date: 2020-09-05 16:38:23 +0900
+category: project_in_lab
+tag: ['weapon', 'object detection']
+---
+
+공프기 6주차
+===
+kcc에 논문을 등재하기 위해 gun detection 논문을 보고 논문의 흐름을 이해하고 준비하기.
+
+### 논문 흐름
+
+#### Automatic handgun detection alarm in videos using deep learning.(2018년)
+
+**abstract**    
+문제 제기: 여전히 사람들이 감시카메라를 보고, 감시하고 있다.    
+최종 목적: False positive를 줄이는 것(총이라고 잘못 인식하는 것)     
+최종 목적 성취를 위한 방법: CNN classifier를 사용하고 가장 좋은 classification model를 찾는다.    
+       
+**Introduction**     
+통계를 통한 문제제기 -> 해결 방법 제안 -> 해결 방안을 위한 도구 소개. -> conclusion.    
+
+**Related works**     
+Gun detection 과 Detection model에 대한 소개     
+**Deep learning model**       
+network 소개(VGG-16)    
+**Databes**    
+Database 소개, 그리고 어떤 모델을 어떻게 학습하고, 어떤 object detection 모델을 어떻게 사용했는지, 사진으로 했을 때 어떤 결과가 있었는 지에 대한 설명.    
+**Analysis of the detection in videos**    
+video에 model을 적용 했을 때의 결과와 alarm이 어떻게 잘 울렸는지에 대한 결과.
+**Conclusion**   
+어떤 모델을 사용하였고, 어떤 것이 가장 좋은 결과를 얻었고, 다음에는 어떤 것을 할 것인지.     
+#### A binocular image fusion approach for minimizing false positives in handgun detection with deep learning(2019년)
+
+**Abstract**     
+Object detection이 많이 발전했지만, 여전히 질이 좋지 않은 video에 대해서는 성능이 낮다. 그래서 이러한 부분을 해결하기 위해 interest한 부분을 찾는 방법이 필요하다.
